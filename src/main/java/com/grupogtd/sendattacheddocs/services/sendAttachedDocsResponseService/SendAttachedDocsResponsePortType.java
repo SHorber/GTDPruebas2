@@ -1,0 +1,10 @@
+package com.grupogtd.sendattacheddocs.services.sendAttachedDocsResponseService;
+
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+import com.grupogtd.sendattacheddocs.services.sendAttachedDocsResponseService.types.ResponseMessageHeader;
+import com.grupogtd.sendattacheddocs.services.sendAttachedDocsResponseService.types.SendAttachedDocsResponseBody;
+
+public interface SendAttachedDocsResponsePortType extends Remote {
+  int sendAttachedDocsResponse(ResponseMessageHeader paramResponseMessageHeader, SendAttachedDocsResponseBody paramSendAttachedDocsResponseBody) throws RemoteException;
+}
